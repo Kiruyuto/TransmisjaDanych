@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F8B6EA86-C25D-4AD2-AE56-AD4DCA53C42F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Lab2_win_forms</RootNamespace>
+    <AssemblyName>Lab2_win_forms</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MathNet.Numerics, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MathNet.Numerics.5.0.0\lib\net461\MathNet.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="MathNet.Numerics.Data.Text, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MathNet.Numerics.Data.Text.5.0.0\lib\net461\MathNet.Numerics.Data.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot, Version=2.1.0.0, Culture=neutral, PublicKeyToken=638079a8f0bd61e9, processorArchitecture=MSIL">
+      <HintPath>packages\OxyPlot.Core.2.1.0\lib\net45\OxyPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot.WindowsForms, Version=2.1.0.0, Culture=neutral, PublicKeyToken=245eacd6b5d2d338, processorArchitecture=MSIL">
+      <HintPath>packages\OxyPlot.WindowsForms.2.1.0\lib\net45\OxyPlot.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\HelperFuncs.cs" />
+    <Compile Include="Assets\DSPLib.cs" />
+    <Compile Include="KodyDoZadan\ListaKod1.cs" />
+    <Compile Include="KodyDoZadan\ListaKod2.cs" />
+    <Compile Include="KodyDoZadan\ListaKod3.cs" />
+    <Compile Include="KodyDoZadan\ListaKod4.cs" />
+    <Compile Include="KodyDoZadan\ListaKod5.cs" />
+    <Compile Include="KodyDoZadan\ListaKod6.cs" />
+    <Compile Include="KodyDoZadan\ListaKod7.cs" />
+    <Compile Include="ListaZad1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaZad1.Designer.cs">
+      <DependentUpon>ListaZad1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaZad3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaZad3.designer.cs">
+      <DependentUpon>ListaZad3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaZad4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaZad4.Designer.cs">
+      <DependentUpon>ListaZad4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaZad6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaZad6.Designer.cs">
+      <DependentUpon>ListaZad6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaZad7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaZad7.Designer.cs">
+      <DependentUpon>ListaZad7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WybierzZadanie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WybierzZadanie.Designer.cs">
+      <DependentUpon>WybierzZadanie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaZad2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaZad2.Designer.cs">
+      <DependentUpon>ListaZad2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ListaZad1.resx">
+      <DependentUpon>ListaZad1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaZad3.resx">
+      <DependentUpon>ListaZad3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaZad4.resx">
+      <DependentUpon>ListaZad4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaZad6.resx">
+      <DependentUpon>ListaZad6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaZad7.resx">
+      <DependentUpon>ListaZad7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WybierzZadanie.resx">
+      <DependentUpon>WybierzZadanie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaZad2.resx">
+      <DependentUpon>ListaZad2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Img2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Img2_2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
