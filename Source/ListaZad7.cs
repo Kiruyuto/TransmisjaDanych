@@ -363,8 +363,8 @@ namespace Lab2_win_forms {
                 // Demodulacja FSK
                 //var itgr1 = _lista5.Itgr(yOdT1, n, tb, fs);
                 //var itgr2 = _lista5.Itgr(yOdT2, n, tb, fs);
-                var itgr1 = _lista7.itgr(yOdT1, n, tb, fs);
-                var itgr2 = _lista7.itgr(yOdT2, n, tb, fs);
+                var itgr1 = _lista7.Itgr(yOdT1, n, tb, fs);
+                var itgr2 = _lista7.Itgr(yOdT2, n, tb, fs);
 
                 var itgrCombined = _lista4.CombineArrays(itgr1, itgr2);
                // var largerH = _lista7.MoreThanH(itgrCombined, n, a1, a2); // H z automatu
@@ -643,8 +643,8 @@ namespace Lab2_win_forms {
                 // Demodulacja FSK
                 //var itgr1 = _lista5.Itgr(yOdT1, n, tb, fs);
                 //var itgr2 = _lista5.Itgr(yOdT2, n, tb, fs);
-                var itgr1 = _lista7.itgr(yOdT1, n, tb, fs);
-                var itgr2 = _lista7.itgr(yOdT2, n, tb, fs);
+                var itgr1 = _lista7.Itgr(yOdT1, n, tb, fs);
+                var itgr2 = _lista7.Itgr(yOdT2, n, tb, fs);
                 
                 var itgrCombined = _lista4.CombineArrays(itgr1, itgr2);
                 var largerH = _lista7.MoreThanH(itgrCombined, n, a1, a2); // H z automatu

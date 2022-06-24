@@ -178,7 +178,7 @@ namespace Lab2_win_forms.KodyDoZadan {
         }
 
         /// <summary>
-        /// Funkcja obliczajaca bit error rate
+        /// Funkcja obliczajaca bit error rate (BER)
         /// </summary>
         /// <param name="przeslane">tablica bitow przeslanych</param>
         /// <param name="odebrane">tablica bitow odeebranych</param>
@@ -196,13 +196,21 @@ namespace Lab2_win_forms.KodyDoZadan {
             return result;
         }
 
-        internal double[] itgr(double[] input, int n, double ts, double tb) {
+        /// <summary>
+        /// Funkcja obliczajaca calke, sygnal p(t) demodulacji konherentnej
+        /// </summary>
+        /// <param name="input">Dablica</param>
+        /// <param name="n">Dlugosc sygnalu/rozmiar tablicy</param>
+        /// <param name="ts">Okres probkowania</param>
+        /// <param name="tb">Czas trwania bitu</param>
+        /// <returns>Sygnal wynikowy wynikajacy z instrukcji, p(t)</returns>
+        internal double[] Itgr(double[] input, int n, double ts, double tb) {
             var result = new double[n];
             var calka = 0.0;
             var x = HelperFuncs.GenT(n, ts);
             var tb2 = tb;
             for (var i = 0; i < n; i++) {
-                calka += x[i];
+                calka += input[i];
                 result[i] = calka;
                 if (tb2 < x[i]) {
                     calka = 0.0;
