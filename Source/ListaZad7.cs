@@ -455,7 +455,7 @@ namespace Lab2_win_forms {
                 var xt = _lista7.XOdT(modulateAsk, a, n, ts, fn);
                 var yOdT = new double[n];
                 for (var i = 0; i < n; i++) {
-                    yOdT[i] = xt[i] * Math.Pow(Math.E, (-(beta) * i));
+                    yOdT[i] = xt[i] * Math.Pow(Math.E, (-beta) * xt[i]);
                 }
 
                 // Demodulacja ASK
@@ -541,7 +541,7 @@ namespace Lab2_win_forms {
                 var xt = _lista7.XOdT(modulatePsk, a, n, ts, fn);
                 var yOdT = new double[n];
                 for (var i = 0; i < n; i++) {
-                    yOdT[i] = xt[i] * Math.Pow(Math.E, (-(beta) * i));
+                    yOdT[i] = xt[i] * Math.Pow(Math.E, (-beta) * xt[i]);
                 }
 
                 // Demodulacja ASK
@@ -633,11 +633,11 @@ namespace Lab2_win_forms {
                 var xt2 = _lista7.XOdT(modulateFsk, a, n, ts, fn2);
                 var yOdT1 = new double[n];
                 for (var i = 0; i < n; i++) {
-                    yOdT1[i] = xt1[i] * Math.Pow(Math.E, (-(beta) * i));
+                    yOdT1[i] = xt1[i] * Math.Pow(Math.E, (-beta) * xt1[i]);
                 }
                 var yOdT2 = new double[n];
                 for (var i = 0; i < n; i++) {
-                    yOdT2[i] = xt2[i] * Math.Pow(Math.E, (-(beta) * i));
+                    yOdT2[i] = xt2[i] * Math.Pow(Math.E, (-beta)* xt2[i]);
                 }
 
                 // Demodulacja FSK

@@ -83,7 +83,7 @@ namespace Lab2_win_forms.Assets {
                 int index = input[i];
                 for (var k = streamLength - 1; k >= 0; k--) {
                     output[i * streamLength + k] = Convert.ToInt32(index % 2);
-                    index = index / 2;
+                    index /= 2;
                 }
             }
 
